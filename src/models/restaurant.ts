@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-let restaurant = new Schema({
+let Restaurant = new Schema({
   name: {
     type: String
   },
@@ -14,7 +14,12 @@ let restaurant = new Schema({
   },
   type: {
     type: String
-  }
+  },
+  waiters: [{
+    type: Schema.Types.ObjectId,
+    ref: 'Waiter'
+  }]
+
 });
 
-export default mongoose.model("restaurant", restaurant, "restaurants");
+export default mongoose.model("Restaurant", Restaurant, "restaurants");
