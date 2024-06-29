@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-let waiter = new Schema({
+let Waiter = new Schema({
   userName: {
     type: String
   },
@@ -29,4 +29,4 @@ let waiter = new Schema({
   },
 });
 
-export default mongoose.model("Waiter", waiter, "waiters");
+export default mongoose.model("Waiter", Waiter, "waiters");

@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-let guest = new Schema({
+let Guest = new Schema({
   userName: {
     type: String
   },
@@ -35,4 +35,4 @@ let guest = new Schema({
   },
 });
 
-export default mongoose.model("Guest", guest, "guests");
+export default mongoose.model("Guest", Guest, "guests");
