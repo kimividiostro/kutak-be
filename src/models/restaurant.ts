@@ -18,8 +18,31 @@ let Restaurant = new Schema({
   waiters: [{
     type: Schema.Types.ObjectId,
     ref: 'Waiter'
+  }],
+  workingDays: [{
+    type: Number
+  }],
+  workingHoursStart: {
+    type: Number
+  },
+  workingHoursEnd: {
+    type: Number
+  },
+  tables: [{
+    numberOfSeats: {
+      type: Number
+    }
   }]
-
 });
+
+enum Days {
+  Monday = 1,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday,
+  Sunday
+}
 
 export default mongoose.model("Restaurant", Restaurant, "restaurants");
