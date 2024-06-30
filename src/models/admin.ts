@@ -7,7 +7,8 @@ let Admin = new Schema({
     type: String
   },
   password: {
-    type: String
+    type: String,
+    select: false
   }
 });
 

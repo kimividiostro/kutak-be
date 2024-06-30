@@ -7,7 +7,8 @@ let Waiter = new Schema({
     type: String
   },
   password: {
-    type: String
+    type: String,
+    select: false
   },
   firstName: {
     type: String
