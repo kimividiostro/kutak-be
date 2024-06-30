@@ -29,6 +29,9 @@ let Restaurant = new Schema({
     type: Number
   },
   tables: [{
+    tableNumber: {
+      type: Number
+    },
     numberOfSeats: {
       type: Number
     }
