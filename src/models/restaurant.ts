@@ -38,14 +38,14 @@ let Restaurant = new Schema({
   }]
 });
 
-enum Days {
-  Monday = 1,
+export enum DaysOfWeek {
+  Sunday,
+  Monday,
   Tuesday,
   Wednesday,
   Thursday,
   Friday,
-  Saturday,
-  Sunday
+  Saturday
 }
 
 export default mongoose.model("Restaurant", Restaurant, "restaurants");
