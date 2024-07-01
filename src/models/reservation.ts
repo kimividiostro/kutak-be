@@ -29,6 +29,10 @@ let Reservation = new Schema({
     },
     specialInstructions: {
         type: String
+    },
+    isProcessed: {
+        type: Boolean,
+        default: false
     }
 })
 
