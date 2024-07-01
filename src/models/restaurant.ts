@@ -35,7 +35,24 @@ let Restaurant = new Schema({
     numberOfSeats: {
       type: Number
     }
-  }]
+  }],
+  menu: [
+    {
+      menuItem: {
+        name: {
+          type: String
+        },
+        price: {
+          type: Number
+        },
+        ingredients: [
+          {
+            type: String
+          }
+        ]
+      }
+    }
+  ]
 });
 
 export enum DaysOfWeek {
