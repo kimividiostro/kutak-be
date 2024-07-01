@@ -19,13 +19,16 @@ let Reservation = new Schema({
         ref: 'Guest',
         required: true
     },
-    reservationStartTime: {
+    reservationStart: {
         type: Date,
         required: true
     },
-    reservationEndTime: {
+    reservationEnd: {
         type: Date,
         required: true
+    },
+    specialInstructions: {
+        type: String
     }
 })
 
