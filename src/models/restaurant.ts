@@ -12,6 +12,14 @@ let Restaurant = new Schema({
   phone: {
     type: String
   },
+  contactPerson: {
+    name: {
+      type: String
+    },
+    phone: {
+      type: String
+    }
+  },
   type: {
     type: String
   },
