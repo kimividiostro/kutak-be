@@ -42,6 +42,9 @@ let Restaurant = new Schema({
         name: {
           type: String
         },
+        picture: {
+          type: String
+        },
         price: {
           type: Number
         },
